@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap-style.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Document</title>
+    <title>BlackJack</title>
 </head>
 <body>
     <div class="text-center">
         <h1>Blackjack</h1>
-        <p id="message-el" class="text-light">Want to play a round?</p>
-        <p id="cards-el" class="text-light">Cards:</p>
-        <p id="sum-el" class="text-light">Sum:</p>
+        <div class="text-light">
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+        </div>
         <button class="btn-start-game btn btn-warning btn-sm text-success mb-2 b-0" onclick="startGame()">START GAME</button>
         <button class="btn-start-game btn btn-warning btn-sm text-success mb-2 b-0" onclick="newCard()">NEW CARD</button>
+        <button class="btn-start-game btn btn-danger btn-sm text-dark mb-2 b-0" onclick="reset()">RESET</button>
         <p id="player-el"></p>
     </div>
     <script src="/assets/bootstrap/bootstrap-script.js"></script>
