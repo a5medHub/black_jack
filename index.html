@@ -9,13 +9,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Blackjack</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-    <button class="btn-start-game btn btn-warning" onclick="startGame()">START GAME</button>
-    <button class="btn-start-game btn btn-warning" onclick="newCard()">NEW CARD</button>
-    <p id="player-el"></p>
+    <div class="text-center">
+        <h1>Blackjack</h1>
+        <p id="message-el" class="text-light">Want to play a round?</p>
+        <p id="cards-el" class="text-light">Cards:</p>
+        <p id="sum-el" class="text-light">Sum:</p>
+        <button class="btn-start-game btn btn-warning text-success" onclick="startGame()">START GAME</button>
+        <button class="btn-start-game btn btn-warning text-success" onclick="newCard()">NEW CARD</button>
+        <p id="player-el"></p>
+    </div>
     <script src="/assets/bootstrap/bootstrap-script.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
