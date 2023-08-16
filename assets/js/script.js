@@ -54,12 +54,14 @@ function renderGame() {
         messageEl.innerHTML = "do you want a new card ?"
     }else if(sum == 21){
         messageEl.innerHTML = 'congrats you win!'
+    }else if(player.chips == 0) {
+        messageEl.innerHTML = "you are out of money, try again"
     }else{
         messageEl.innerHTML ='sorry, you lose, try again'
     }
 }
 function reset() {
-    if(sum > 21 || player.chips == 0){
+    if(sum >= 21 || player.chips == 0){
         location.reload()
     }
 }
