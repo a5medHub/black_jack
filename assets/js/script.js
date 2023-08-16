@@ -5,12 +5,12 @@ let player = { //shorthand
     chips:200
 }
 // let cards = []
-
+let sum = 0
 const messageEl = document.getElementById("message-el")
 const cardsEl = document.getElementById("cards-el")
 const sumEl = document.getElementById("sum-el")
 const playerEl = document.getElementById("player-el")
-
+cardsEl.innerHTML = "Cards: "
 playerEl.innerHTML = `${player.name}: $${player.chips}`
 
 function getRandomCard() {
