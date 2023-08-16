@@ -1,6 +1,6 @@
 // let playerName = "ahmad"
 // let chips = 200
-export let admin01 = { //shorthand
+export let player = { //shorthand
     name:"ahmad",
     chips:200
 }
@@ -9,5 +9,6 @@ export let admin01 = { //shorthand
 const messageEl = document.getElementById("message-el")
 const cardsEl = document.getElementById("cards-el")
 const sumEl = document.getElementById("sum-el")
+const playerEl = document.getElementById("player-el")
 
-
+playerEl.innerHTML = `${player.name}: $${player.chips} `
