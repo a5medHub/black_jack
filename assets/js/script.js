@@ -58,3 +58,8 @@ function renderGame() {
         messageEl.innerHTML ='sorry, you lose, try again'
     }
 }
+function reset() {
+    if(sum > 21 || player.chips == 0){
+        location.reload()
+    }
+}
