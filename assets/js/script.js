@@ -11,6 +11,7 @@ const cardsEl = document.getElementById("cards-el")
 const sumEl = document.getElementById("sum-el")
 const playerEl = document.getElementById("player-el")
 cardsEl.innerHTML = "Cards: "
+sumEl.innerHTML = "Sum: "
 playerEl.innerHTML = `${player.name}: $${player.chips}`
 
 function getRandomCard() {
