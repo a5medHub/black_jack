@@ -22,5 +22,6 @@ function startGame() {
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     sum = firstCard + secondCard
-
+    cardsEl.innerHTML = `Cards: ${firstCard} ${secondCard}`
+    sumEl.innerHTML = `Sum: ${sum}`
 }
