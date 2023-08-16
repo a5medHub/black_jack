@@ -32,8 +32,29 @@ function startGame() {
         cardsEl.innerHTML = `Cards: ${firstCard} ${secondCard}`
         sumEl.innerHTML = `Sum: ${sum}`
         playerEl.innerHTML = `${player.name}: $${player.chips}`
+        renderGame()
         
     }else{
         alert('You already have started the game')
+    }
+}
+function newCard() {
+    if(isAlive == true && player.chips >= 50 && sum < 21){
+        player.chips -= 50
+        let card = getRandomCard()
+        cardsEl.innerHTML += ` ${card}`
+        sum += card
+        sumEl.innerHTML = `Sum: ${sum}`
+        playerEl.innerHTML = `${player.name}: $${player.chips}`
+        renderGame()
+    }
+}
+function renderGame() {
+    if(sum < 21){
+        messageEl.innerHTML = "do you want a new card ?"
+    }else if(sum == 21){
+        messageEl.innerHTML = 'congrats you win!'
+    }else{
+        messageEl.innerHTML ='sorry, you lose, try again'
     }
 }
