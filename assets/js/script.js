@@ -4,3 +4,10 @@ export let admin01 = { //shorthand
     name:"ahmad",
     chips:200
 }
+// let cards = []
+
+const messageEl = document.getElementById("message-el")
+
+
+"cards-el"
+"sum-el"
